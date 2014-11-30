@@ -1,0 +1,41 @@
+﻿@{
+	Layout = ViewBag.Layout;
+	ViewBag.Title = "Consulta de alunos";
+}
+
+@section scripts{
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="~/Scripts/LocalizarAluno/consultarAluno.js"></script>
+}
+
+<div class="page-header">
+	<h1>Localizador de alunos</h1>
+	<small>Digite o RA do aluno para exibir sua localização no mapa.</small>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<form onsubmit="submeterBuscaAluno(); return false;">
+			<div class=" input-group">
+				<input id="raAlunoInputText" type="number" class="form-control" placeholder="Localizar aluno..." required="required" oninvalid="validarNumeroRa(this)" oninput="validarNumeroRa(this)">
+				<span class="input-group-btn">
+					<button id="enviarPesquisaButton" class="btn btn-default" type="submit">Pesquisar</button>
+				</span>
+			</div>
+		</form>
+	</div>
+
+</div>
+<br />
+<div class="row">
+	<div id="map-canvas"></div>
+</div>
+@{
+	if(ViewBag.NumeroRA != null)
+	{
+		<script>
+			localizarAluno(@ViewBag.NumeroRA)
+		</script>
+	
+		ViewBag.NumeroRA = null;
+	}
+}

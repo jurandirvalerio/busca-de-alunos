@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "MvcApplication\MvcApplication.csproj", "{E6903E2A-AA6E-47B0-8B05-F769CFA37F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravadorAcesso", "GravadorAcesso\GravadorAcesso.csproj", "{582998F3-3C6A-4783-B408-72A9E27A9BD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplicationTests", "MvcApplicationTests\MvcApplicationTests.csproj", "{43050799-1DFA-49C2-973A-95E7ABBDA05E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6903E2A-AA6E-47B0-8B05-F769CFA37F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6903E2A-AA6E-47B0-8B05-F769CFA37F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6903E2A-AA6E-47B0-8B05-F769CFA37F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6903E2A-AA6E-47B0-8B05-F769CFA37F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582998F3-3C6A-4783-B408-72A9E27A9BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582998F3-3C6A-4783-B408-72A9E27A9BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582998F3-3C6A-4783-B408-72A9E27A9BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582998F3-3C6A-4783-B408-72A9E27A9BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43050799-1DFA-49C2-973A-95E7ABBDA05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43050799-1DFA-49C2-973A-95E7ABBDA05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43050799-1DFA-49C2-973A-95E7ABBDA05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43050799-1DFA-49C2-973A-95E7ABBDA05E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

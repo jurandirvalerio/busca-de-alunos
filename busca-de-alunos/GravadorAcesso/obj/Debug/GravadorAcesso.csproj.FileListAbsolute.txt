@@ -1,0 +1,5 @@
+C:\Projetos\Projetos\busca-de-alunos\GravadorAcesso\bin\Debug\GravadorAcesso.dll
+C:\Projetos\Projetos\busca-de-alunos\GravadorAcesso\bin\Debug\GravadorAcesso.pdb
+C:\Projetos\Projetos\busca-de-alunos\GravadorAcesso\obj\Debug\GravadorAcesso.csprojResolveAssemblyReference.cache
+C:\Projetos\Projetos\busca-de-alunos\GravadorAcesso\obj\Debug\GravadorAcesso.dll
+C:\Projetos\Projetos\busca-de-alunos\GravadorAcesso\obj\Debug\GravadorAcesso.pdb

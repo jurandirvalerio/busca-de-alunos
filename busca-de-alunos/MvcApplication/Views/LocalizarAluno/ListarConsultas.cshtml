@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MvcApplication.Models.AcessoViewModel>
+
+@{
+	Layout = "";
+	ViewBag.Title = "Histórico de consulta de alunos";
+}
+
+<link href="~/Content/LocalizarAluno/listarConsulta.css" rel="stylesheet" />
+
+<div class="page-header">
+	<h1>Consultas realizadas</h1>
+	<small>Exibe o histórico das últimas dez consultas de alunos por RA.</small>
+</div>
+<div class="row">
+	<div class="table-responsive">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>
+						Encontrado
+					</th>
+					<th>
+						RA
+					</th>
+					<th>
+						Data da consulta
+					</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var acesso in Model)
+				{
+					<tr>
+						<td class="alunoEncontradoColumn">
+							@Html.DisplayFor(modelItem => acesso.AlunoEncontrado)
+						</td>
+						<td class="raColumn">
+							@Html.DisplayFor(modelItem => acesso.NumeroRA)
+						</td>
+						<td class="dataColumn">
+							@Html.DisplayFor(modelItem => acesso.DataAcesso)
+						</td>
+						<td>
+							<a href="#" onclick="carregarHome(@acesso.NumeroRA)">Consultar</a>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

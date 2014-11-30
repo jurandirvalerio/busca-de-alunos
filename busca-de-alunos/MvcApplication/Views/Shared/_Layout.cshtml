@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>@ViewBag.Title</title>
+
+	@Scripts.Render("~/bundles/modernizr")
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@Scripts.Render("~/bundles/toastr")
+	<script src="~/Scripts/localizarAluno/index.js"></script>
+
+	@RenderSection("scripts", required: false)
+
+	@Styles.Render("~/Content/css")
+	@Styles.Render("~/Content/toastr")
+
+	<script type="text/javascript">
+		var serviceBaseUrl = '@( Url.Content("~/"))';
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li id="homeLi" class="active"><a href="#" onclick="carregarHome()">Home</a></li>
+				<li id="historicoLi" class=""><a href="#" onclick="carregarHistoricoConsultas()">Histórico de consultas</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="containerPrincipal" class="container">
+		@RenderBody()
+	</div>
+</body>
+</html>
